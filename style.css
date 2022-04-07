@@ -1,0 +1,107 @@
+:root {
+    --dark-cyan: hsl(185, 75%, 39%) ;
+    --very-dark-desaturated-blue:  hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+
+    --dark-gray: hsl(0, 0%, 59%);
+  }
+
+*,
+*::after,
+*::before {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+    font-size: 18px;
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: var(--dark-cyan);    
+    background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;      
+    background-attachment: fixed, fixed;
+    background-position: top -500px left -300px, bottom -600px right -300px;
+        
+}
+
+    hr {
+        width: 100%;
+        border-top: 1px solid var(--dark-gray);
+        margin-top: 1rem;
+    }
+
+    span {
+        font-size: 0.7em;
+        letter-spacing: 0.1em;
+    }
+
+    span, .age {
+        color: var(--dark-grayish-blue);
+    }
+
+    .content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .card {
+    min-width: 350px;
+    background-color: #fff;
+    background-image: url(images/bg-pattern-card.svg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 10px;
+    
+
+    }
+    .card-bg-img {
+        max-width: 100%;
+        margin-bottom: 90px;
+    }
+
+    .card-profile-img {
+        border: 5px solid #fff;
+        border-radius: 50%;
+    }
+
+    .card-profile-img img {
+        border-radius: 50%;
+    }
+
+    .profile-info {
+        margin-top: 1rem;
+    }
+    .profile-location {
+        margin-bottom: 1rem;    
+    }
+
+    .profile-name, .stats-social p {
+        font-weight: 700;
+    }
+    .age {
+        font-size: 1em;
+        font-weight: 400;
+        letter-spacing: 0;
+    }
+
+    .stats-info{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+        margin: 2rem 0;
+    }
+
+    .stats-social {
+        text-align: center;
+    }
