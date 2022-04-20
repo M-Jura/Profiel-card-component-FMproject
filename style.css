@@ -27,7 +27,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-height: 100vh;
+  min-height: 100vh;
 }
 
 hr {
@@ -49,11 +49,7 @@ span,
 }
 
 .content {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  margin: 2rem;
 }
 
 .card {
